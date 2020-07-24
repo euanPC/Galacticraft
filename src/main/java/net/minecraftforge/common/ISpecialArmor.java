@@ -58,7 +58,7 @@
 //     * @param slot The armor slot the item is in.
 //     * @return A ArmorProperties instance holding information about how the armor effects damage.
 //     */
-//    public ArmorProperties getProperties(LivingEntity player, @Nonnull ItemStack armor, DamageSource source, double damage, int slot);
+//    public ArmorProperties getProperties(LivingEntity player, @Nonnull ItemStack armor, DamageSource source, double damage, EnumArmorType slot);
 //
 //    /**
 //     * Get the displayed effective armor.
@@ -68,7 +68,7 @@
 //     * @param slot The armor slot the item is in.
 //     * @return The number of armor points for display, 2 per shield.
 //     */
-//    public abstract int getArmorDisplay(PlayerEntity player, @Nonnull ItemStack armor, int slot);
+//    public abstract int getArmorDisplay(PlayerEntity player, @Nonnull ItemStack armor, EnumArmorType slot);
 //
 //    /**
 //     * Applies damage to the ItemStack. The mod is responsible for reducing the
@@ -82,7 +82,7 @@
 //     * @param damage The amount of damage being applied to the armor
 //     * @param slot The armor slot the item is in.
 //     */
-//    public abstract void damageArmor(LivingEntity entity, @Nonnull ItemStack stack, DamageSource source, int damage, int slot);
+//    public abstract void damageArmor(LivingEntity entity, @Nonnull ItemStack stack, DamageSource source, int damage, EnumArmorType slot);
 //
 //    public static class ArmorProperties implements Comparable<ArmorProperties>
 //    {
